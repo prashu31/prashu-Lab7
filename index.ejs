@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlib Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form method="post">
+            <input type="text" name="animal" placeholder="Animal" required>
+            <input type="text" name="emotion" placeholder="Emotion" required>
+            <input type="text" name="action" placeholder="Action" required>
+            <input type="text" name="place" placeholder="Place" required>
+            <button type="submit">Tell the story</button>
+        </form>
+        <% if (story) { %>
+            <div id="madlib-story">
+                <p>
+                    <%= story %>
+                </p>
+            </div>
+        <% } %>
+    </div>
+</body>
+
+</html>
